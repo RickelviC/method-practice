@@ -11,10 +11,10 @@ public class CompareNumbers {
 
         boolean even = isEven(number);
 
-        double positive = isPositive(number);
+        boolean positive = isPositive(number);
 
-        System.out.println(even);
-        System.out.println(positive);
+        System.out.println("is " + number + " Even: " + even);
+        System.out.println("is " + number + " positive: " + positive);
 
 
     }
@@ -24,7 +24,8 @@ public class CompareNumbers {
 
     }
 
-    public static double isPositive(double number){
-        return Math.abs(number);
+    public static boolean isPositive(double number){
+        // return Math.abs(number);
+        return number > 0;
     }
 }
